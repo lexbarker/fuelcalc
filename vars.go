@@ -8,7 +8,7 @@ type Mpg struct {
 }
 
 //constant for litre to gallon conversion
-const L2gal = 4.53
+const L2gal = 4.54
 
 //Provides Miles and mpg to determine fuel used
 type Fuelused struct {
