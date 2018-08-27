@@ -1,14 +1,16 @@
+// fuelcalc provides function to caluclate mile per gallon
 package fuelcalc
 
-import "fmt"
-
-//import "fmt"
-
-func (fc *Falc) Consumption() {
+func (fc *Mpg) Consumption() (mpg float64) {
 	mpl := fc.Miles / fc.Litres
-	fmt.Printf("you achieved %f mile per litre\n", mpl)
-	mpg := mpl * L2gal
-	fmt.Printf("mpg  = %f\n", mpg)
+	mpg = mpl * L2gal
+	return
+}
+
+func (fc *Fuelused) Fuelrequired() {
+	fused := fc.Miles / fc.Mpg
+	fc.Litres = fused * Gal2l
+	return
 }
 
 func Testmeout() {}
